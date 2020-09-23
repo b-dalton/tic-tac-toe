@@ -7,7 +7,7 @@ describe TicTacToe do
       it 'then display an empty grid' do
         # Empty grid is displayed to the command line
         game = TicTacToe.new
-        expect { game.new_game }.to output(a_string_including(<<~'GRID'
+        expect { system 'ruby lib/tic_tac_toe.rb' }.to output(a_string_including(<<~'GRID'
           +----+----+----+
           |    |    |    |
           +----+----+----+
@@ -16,7 +16,7 @@ describe TicTacToe do
           |    |    |    |
           +----+----+----+
         GRID
-                                                             )).to_stdout
+                                                             )).to_stdout_from_any_process
       end
     end
   end
