@@ -86,7 +86,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aruba
+  aruba (~> 1.0.3)
   rspec
 
 BUNDLED WITH
