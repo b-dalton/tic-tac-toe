@@ -6,7 +6,6 @@ describe TicTacToe do
       # User runs tic_tac_toe.rb from command line
       it 'then display an empty grid' do
         # Empty grid is displayed to the command line
-        game = TicTacToe.new
         expect { system 'ruby lib/tic_tac_toe.rb' }.to output(a_string_including(<<~'GRID'
           +----+----+----+
           |    |    |    |
