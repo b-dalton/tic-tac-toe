@@ -18,5 +18,15 @@ describe TicTacToe do
                                                              )).to_stdout_from_any_process
       end
     end
+
+    context 'when the user makes a move "X"' do
+      it 'displays an X in the grid' do
+
+        expect
+      end
+    end
   end
 end
+
+
+
