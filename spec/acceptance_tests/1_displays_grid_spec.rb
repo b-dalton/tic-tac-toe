@@ -1,6 +1,6 @@
 require_relative '../../lib/tic_tac_toe.rb'
 
-describe TicTacToe, type: :aruba do
+describe 'command line interface', type: :aruba do
   context 'given the app is started from the command line' do
     # Arrange
     before(:each) do
