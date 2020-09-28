@@ -12,3 +12,19 @@ Feature: Displays Tic Tac Toe board grid
               +-----+-----+-----+
                  A     B     C
             """
+
+        Given I type "A, 3"
+        Then the output should contain
+           """
+              +-----+-----+-----+
+            3 |  X  |     |     |
+              +-----+-----+-----+
+            2 |     |     |     |
+              +-----+-----+-----+
+            1 |     |     |     |
+              +-----+-----+-----+
+                 A     B     C
+            """
+
+
+
