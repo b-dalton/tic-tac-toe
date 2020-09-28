@@ -87,6 +87,7 @@ PLATFORMS
 
 DEPENDENCIES
   aruba (~> 1.0.3)
+  cucumber
   rspec
 
 BUNDLED WITH
