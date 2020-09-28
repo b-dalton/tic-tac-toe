@@ -19,6 +19,10 @@ class TicTacToe
       +----+----+----+
     GRID
   end
+
+  def player_move
+  end
+  
 end
 
 TicTacToe.new.new_game
