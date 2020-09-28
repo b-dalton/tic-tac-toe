@@ -26,6 +26,33 @@ RSpec.describe Grid do
               [nil, nil, nil]
             ])
         end
+      end
+
+      context 'when another move is made' do
+        it 'records that move' do
+          grid = Grid.new
+          grid.add_move("player1", "C1")
+
+          expect(grid.grid).to eq([
+            [nil, nil, nil],
+            [nil, nil, nil],
+            [nil, nil, "player1"]
+          ])
         end
+      end
+
+      context 'when another move is made' do
+        it 'records that move' do
+          grid = Grid.new
+          grid.add_move("player2", "B2")
+
+          expect(grid.grid).to eq([
+            [nil, nil, nil],
+            [nil, "player2", nil],
+            [nil, nil, nil]
+          ])
+        end
+      end
+
     end
   end
