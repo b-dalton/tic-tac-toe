@@ -16,7 +16,7 @@ class Grid
        coordinates = coordinate_converter(user_coordinates)
        column = coordinates[0]
        row = coordinates[1]
-       
+
        @grid[row][column] = player_name        
     end
 
