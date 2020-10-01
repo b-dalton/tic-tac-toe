@@ -1,20 +1,26 @@
-require '../tic_tac_toe'
 require 'rspec'
 require 'rack/test'
+require_relative '../../bin/tic_tac_toe'
 
 describe 'tic-tac-toe app' do
-    include Rack::Test::Methods
+  include Rack::Test::Methods
 
-    def app 
-        MyApp
-    end
+  def app
+    MyApp
+  end
 
-    context 'when web server is started' do
-        it 'displays a simple welcome message' do
-            get '/'
-            expect(last_response).to be_ok
-            expect(last_response.body).to eq("Hello, world")
+  context 'with simple display' do
+    it 'starts with an empty 3x3 tic-tac-toe grid' do
+      # Act
+      get '/tictactoe'
+
+      # Assert
+      expect(last_response).to be_ok
+      (0..2).each do |row|
+        (0..2).each do |col|
+          expect(last_response.body).to have_tag('input', with: { class: "row#{row} col#{col}" })
         end
-        
+      end
     end
+  end
 end

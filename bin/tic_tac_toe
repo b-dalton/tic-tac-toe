@@ -1,8 +1,0 @@
-#! /usr/local/opt/ruby/bin/ruby
-require 'sinatra'
-
-get '/' do
-  "Hello world"
-end
-
-# TicTacToe.new.new_game
