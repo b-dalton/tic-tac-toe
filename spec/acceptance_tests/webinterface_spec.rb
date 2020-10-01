@@ -13,7 +13,7 @@ describe 'tic-tac-toe app' do
         it 'displays a simple welcome message' do
             get '/'
             expect(last_response).to be_ok
-            expect(last_response.body).to eq("")
+            expect(last_response.body).to eq("Hello, world")
         end
         
     end
