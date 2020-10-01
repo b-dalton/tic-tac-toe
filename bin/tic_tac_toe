@@ -1,9 +1,8 @@
 #! /usr/local/opt/ruby/bin/ruby
 require 'sinatra'
-require 'rack/test'
 
 get '/' do
-  "hello"
+  "Hello world"
 end
 
 # TicTacToe.new.new_game
