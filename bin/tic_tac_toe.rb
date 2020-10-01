@@ -1,8 +1,13 @@
 require 'sinatra'
+require 'erb'
 
 class MyApp < Sinatra::Base
   get '/' do
-    'Hello world'
+    erb :tictactoe
+  end
+
+  get '/hello' do
+    'Hello world!'
   end
 end
 
