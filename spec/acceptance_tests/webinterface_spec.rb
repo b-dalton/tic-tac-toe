@@ -1,6 +1,6 @@
 require 'rspec'
 require 'rack/test'
-require_relative '../../bin/tic_tac_toe'
+require_relative '../../tic_tac_toe'
 
 describe 'tic-tac-toe app' do
   include Rack::Test::Methods
